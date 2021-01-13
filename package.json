@@ -34,6 +34,10 @@
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
     "@ember/render-modifiers": "^1.0.2",
+    "@embroider/compat": "^0.35.1",
+    "@embroider/core": "^0.35.1",
+    "@embroider/router": "^0.35.1",
+    "@embroider/webpack": "^0.35.1",
     "@glimmer/component": "^1.0.2",
     "@glimmer/tracking": "^1.0.2",
     "@types/ember": "^3.1.0",
@@ -79,7 +83,9 @@
     "prettier": "^1.19.1",
     "pretty-quick": "^1.10.0",
     "qunit-dom": "^1.5.0",
-    "sinon": "^8.1.1"
+    "sinon": "^8.1.1",
+    "webpack-assets-manifest": "^4.0.1",
+    "webpack-bundle-analyzer": "^4.3.0"
   },
   "engines": {
     "node": "10.* || >= 12"
