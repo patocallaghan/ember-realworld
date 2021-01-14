@@ -9,4 +9,8 @@ export default class IndexController extends Controller {
   tag = null;
   feed = null;
   page = 1;
+
+  name = 'my-partial';
+
+  myPartial = `partials/my-partial`;
 }
