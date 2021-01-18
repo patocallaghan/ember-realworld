@@ -1,0 +1,6 @@
+<button type="button" {{on "click" (fn this.setMessageType "chat" )}}>Chat</button>
+<button type="button" {{on "click" (fn this.setMessageType "email" )}}>Email</button>
+<button type="button" {{on "click" (fn this.setMessageType "post" )}}>Post</button>
+<hr />
+<h4>type: {{this.messageType}}</h4>
+<ContentEditor @messageType={{this.messageType}} />

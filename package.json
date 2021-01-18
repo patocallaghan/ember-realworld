@@ -90,5 +90,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "@embroider/util": "^0.35.1"
   }
 }

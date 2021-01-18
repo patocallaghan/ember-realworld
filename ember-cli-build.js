@@ -24,6 +24,15 @@ module.exports = function(defaults) {
     staticAddonTrees: true,
     staticHelpers: true,
     staticComponents: true,
-    splitAtRoutes: ['editor', 'settings', 'register', 'login', 'articles', 'profile', 'error'],
+    splitAtRoutes: [
+      'editor',
+      'settings',
+      'register',
+      'login',
+      'articles',
+      'profile',
+      'error',
+      'content-editor',
+    ],
   });
 };

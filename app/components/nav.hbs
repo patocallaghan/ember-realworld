@@ -3,7 +3,7 @@
     <LinkTo @route="index" @query={{hash author=null page=1 tag=null}} class="navbar-brand">conduit</LinkTo>
     <ul class="nav navbar-nav pull-xs-right">
       <li class="nav-item">
-        <LinkTo @route="index" class="nav-link" data-test-nav-home>Home</LinkTo>
+        <LinkTo @route="content-editor" class="nav-link" data-test-nav-home>Editor</LinkTo>
       </li>
       {{#if this.session.isLoggedIn}}
         <li class="nav-item">
