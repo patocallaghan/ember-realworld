@@ -1,5 +1,7 @@
 {{#if this.hasSettingsComponent}}
-  <this.settingsComponent @setting={{@setting}} />
+  {{#unless this.loadSettingsComponentIfAny.isRunning}}
+    <this.settingsComponent @setting={{@setting}} />
+  {{/unless}}
 {{else}}
   <h1>{{@setting.id}} {{@setting.identifier}} is generic</h1>
 {{/if}}
