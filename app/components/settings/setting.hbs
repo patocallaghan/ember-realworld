@@ -1,0 +1,5 @@
+{{#if this.hasSettingsComponent}}
+  <this.settingsComponent @setting={{@setting}} />
+{{else}}
+  <h1>{{@setting.id}} {{@setting.identifier}} is generic</h1>
+{{/if}}

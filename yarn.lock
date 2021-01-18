@@ -2864,6 +2864,14 @@
     "@embroider/macros" "0.35.1"
     ember-cli-babel "^7.23.0"
 
+"@embroider/util@^0.35.1":
+  version "0.35.1"
+  resolved "https://registry.yarnpkg.com/@embroider/util/-/util-0.35.1.tgz#74b41188a37a272f1c9e59bfe4f32be48869d6d4"
+  integrity sha512-cw6tAwMTWY7mpzOv1NhkkuL3+Ceu96uc8MnZGwKlJebbBPoH/JjlaLA9GCvJbmSY7TLrsp1qLDWN+bqyy3Ltxg==
+  dependencies:
+    "@embroider/macros" "0.35.1"
+    ember-cli-babel "^7.22.1"
+
 "@embroider/webpack@^0.35.1":
   version "0.35.1"
   resolved "https://registry.yarnpkg.com/@embroider/webpack/-/webpack-0.35.1.tgz#daf5ba7e9df0231303c5a1bee48593a18f046393"

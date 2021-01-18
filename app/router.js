@@ -21,4 +21,5 @@ Router.map(function() {
     this.route('favorites');
   });
   this.route('error', { path: '/*path' });
+  this.route('component-spike');
 });
