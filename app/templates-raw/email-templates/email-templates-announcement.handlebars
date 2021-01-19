@@ -1,0 +1,621 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width" />
+<meta name="format-detection" content="telephone=no">
+
+<!-- Resets -->
+
+<style type="text/css" data-premailer="ignore">
+  #outlook a{
+    padding: 0;
+  }
+  body{
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+  .ReadMsgBody{
+    width: 100%;
+  }
+  .ExternalClass{
+    width: 100%;
+  }
+  img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    outline: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    line-height: 100%;
+  }
+  #backgroundTable{
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+  }
+</style>
+
+
+<!-- Main styles -->
+
+<style type="text/css">
+  /**
+   * Generic
+   */
+
+  .main,
+  textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 0;
+  }
+
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    table-layout: fixed;
+  }
+  body {
+    max-width: 660px !important;
+  }
+
+  td {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  a {
+    border: none;
+    outline: none !important;
+  }
+
+
+  /**
+   * Header
+   */
+
+  .header td img{
+    padding: 0 0 37px;
+  }
+
+  .header .customisable-widget.logo .customisable-widget-placeholder  {
+    margin-bottom: 37px;
+  }
+
+  /**
+   * Content
+   */
+
+  .content .content-td {
+    line-height: 1.5;
+    color: #818181;
+    padding: 0 0 60px;
+  }
+
+  .content .content-td > :first-child,
+  .embercom-composer-editor > :first-child {
+    margin-top: 0 !important;
+  }
+
+  .content .content-td > :last-child,
+  .embercom-composer-editor > :last-child {
+    margin-bottom: 0;
+  }
+
+  .content h1 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #333c4e;
+    line-height: 1.2;
+    margin: 30px 0 5px;
+  }
+
+  .content h1 a {
+    color: #333c4e;
+  }
+
+  .content h1 + h2 {
+    margin-top: 0 !important;
+  }
+
+  .content h2 + h1 {
+    margin-top: 0 !important;
+  }
+
+  .content h2 {
+    font-size: 21px;
+    font-weight: bold;
+    color: #303030;
+    line-height: 1.25;
+    margin: 30px 0 5px;
+  }
+
+  .content h2 a {
+    color: #303030;
+  }
+
+  .content-td h3 ,
+  .content-td h4 ,
+  .content-td h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+  }
+
+  .content p {
+    font-size: 16px;
+    margin: 0 0 13px 0;
+  }
+
+  .content-td ic-block {
+    margin: 18px 0;
+  }
+
+  .content p.intro {
+    font-size: 18px;
+    color: #5d6678;
+    margin: 40px 0 50px;
+  }
+
+  .content a {
+    color: #178acc;
+    text-decoration: underline;
+  }
+
+  .content strong,
+  .content b {
+    color: #606060;
+  }
+
+  .content ol,
+  .content ul {
+    margin: 20px 0 30px 0;
+    padding: 0;
+  }
+
+
+  .content ol li,
+  .content ul li {
+    margin: 5px 0;
+  }
+
+  .content blockquote {
+    padding: 15px 40px;
+    margin: 20px 15px;
+    font-style: italic;
+    color: #8C8C8C;
+    font-size: 17px;
+    text-align: center;
+    font-family: Georgia, sans-serif;
+  }
+
+  .content blockquote a {
+    color: #8C8C8C;
+  }
+
+  .content .intercom-h2b-button {
+    border-radius: 26px;
+    display: inline-block;
+    min-height: 20px;
+    padding: 13px 35px;
+    color: white !important;
+    font-size: 15px;
+    text-decoration: none !important;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 0;
+    margin: 50px 60px;
+  }
+
+  .content table th {
+    font-weight: bold;
+    background: #f1f1f1;
+  }
+
+  .content table td,
+  .content table th {
+    padding: 7px 10px;
+    border: 1px solid #DADADA;
+    text-align: left;
+    vertical-align: top;
+    font-size: 15px;
+  }
+
+  .content .content-td table {
+    margin: 40px 0 20px;
+    border-collapse: collapse;
+  }
+
+  .content td.content-td .im {
+    display: block;
+  }
+
+  /* Star (> *) selector breaks outlooks :( */
+  .content td.content-td h1 ,
+  .content td.content-td h2 ,
+  .content td.content-td h3 ,
+  .content td.content-td h4 ,
+  .content td.content-td h5 ,
+  .content td.content-td p ,
+  .content td.content-td ol ,
+  .content td.content-td ul ,
+  .content td.content-td .intercom-container ,
+  .content td.content-td blockquote ,
+  .content td.content-td table ,
+  .content td.content-td img ,
+  .content td.content-td hr,
+  .content td.content-td .composer-attachment-list,
+  .content td.content-td ic-block {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .content td.content-td .composer-attachment-list ic-block {
+    padding-left: 21px !important;
+  }
+
+  .content td.content-td pre {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .content td.content-td table {
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .content td.content-td blockquote {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .content td.content-td ol ,
+  .content td.content-td ul {
+    padding-left: 16%;
+  }
+
+  .content td.content-td img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content td.content-td .intercom-container.featured {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
+
+  /**
+   * Footer
+   */
+
+  .footer {
+    background: #f8f8f8;
+  }
+
+  .footer .footer-td {
+    text-align: center;
+    width: 100%;
+    padding: 26px 30px 22px;
+  }
+
+  .footer .follow,
+  .footer p,
+  .footer a,
+  .footer textarea {
+    text-decoration: none;
+    font-size: 13px;
+    color: #a8a8a8;
+  }
+
+  .footer textarea {
+    font-weight: 300;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .footer .follow {
+    font-weight: bold;
+  }
+
+  .footer p {
+    margin: 10px 0 10px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  .footer .unsub {
+    margin: 0;
+  }
+
+  .footer .unsub a {
+    text-decoration: underline;
+    display: block;
+    margin: 0 0 10px 0;
+    pointer-events: none;
+  }
+
+  .footer .powered-by a {
+    font-weight: bold;
+    pointer-events: none;
+  }
+
+  .footer p.social {
+    margin: 27px 0 0;
+  }
+
+  .footer .follow {
+    margin-top: 4px;
+  }
+
+  .customisable-widget.social {
+    margin: 6px 0 8px;
+  }
+
+</style>
+
+<!-- Responsive-->
+<style type="text/css" data-premailer="ignore">
+
+  @media screen and (max-width: 600px) {
+    .main {
+      width: 100% !important;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .content td.content-td h1 ,
+    .content td.content-td h2 ,
+    .content td.content-td h3 ,
+    .content td.content-td h4 ,
+    .content td.content-td h5 ,
+    .content td.content-td p ,
+    .content td.content-td ol ,
+    .content td.content-td ul ,
+    .content td.content-td .intercom-container ,
+    .content td.content-td blockquote ,
+    .content td.content-td table ,
+    .content td.content-td hr,
+    .content td.content-td .composer-attachment-list,
+    .content td.content-td ic-block {
+      padding-left: 5% !important;
+      padding-right: 5% !important;
+    }
+
+    .content td.content-td ol ,
+    .content td.content-td ul {
+      padding-left: 15% !important;
+    }
+
+    .content td.content-td table {
+      margin-left: 5% !important;
+      margin-right: 5% !important;
+    }
+
+    .content td.content-td .intercom-container.featured {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .content td.content-td blockquote {
+      padding-left: 10% !important;
+      padding-right: 10% !important;
+      margin-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .content h1 {
+      font-size: 30px !important;
+      margin: 30px 0 0px !important;
+    }
+
+    .content h2 {
+      font-size: 20px !important;
+    }
+
+    .content p,
+    .content li,
+    .content b,
+    .content i,
+    .content strong,
+    .content em {
+      font-size: 14px !important;
+    }
+
+    .content p.intro {
+      font-size: 16px !important;
+      margin-top: 30px !important;
+      margin-bottom: 30px !important;
+    }
+
+    .footer .footer-td-wrap {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+  }
+
+  .content-td blockquote + * {
+    margin-top: 20px !important;
+  }
+
+  .ExternalClass .content h1 {
+    padding: 30px 0 15px !important;
+  }
+
+  .ExternalClass .content h2 {
+    padding: 15px 0 !important;
+  }
+
+  .ExternalClass .content-td p {
+    padding: 10px 0 !important;
+  }
+
+  .ExternalClass .intercom-container {
+    padding: 10px 0 !important;
+  }
+
+  .ExternalClass .content-td hr + * {
+    padding-top: 20px !important;
+  }
+
+  .ExternalClass .content ol ,
+  .ExternalClass .content ul {
+    padding: 20px 0 20px 40px !important;
+    margin: 0 !important;
+  }
+
+  .ExternalClass .content ol li,
+  .ExternalClass .content ul li {
+    padding: 3px 0 !important;
+    margin: 0 !important;
+  }
+
+  .ExternalClass .footer h2 {
+    padding-bottom: 5px !important;
+  }
+
+  .ExternalClass .footer p {
+    padding: 10px 0 !important;
+  }
+
+</style>
+
+
+<!-- Outlook fix -->
+
+<!--[if gte mso 9]>
+    <style type="text/css">
+      table {
+        border-collapse: collapse !important;
+      }
+      td {
+        border-collapse: collapse !important;
+      }
+    </style>
+<![endif]-->
+
+
+<style type="text/css" media="screen">
+.intercom-align-right {
+  text-align: right !important;
+}
+.intercom-align-center {
+  text-align: center !important;
+}
+.intercom-align-left {
+  text-align: left !important;
+}
+/* Over-ride for RTL */
+.right-to-left .intercom-align-right,
+[dir="rtl"] .intercom-align-right {
+  text-align: left !important;
+}
+.right-to-left .intercom-align-left,
+[dir="rtl"] .intercom-align-left {
+  text-align: right !important;
+}
+[dir="rtl"] .intercom-align-left,
+.right-to-left .intercom-align-left {
+  text-align:right !important;
+}
+[dir="rtl"] li,
+.right-to-left li {
+  text-align:right !important;
+  direction: rtl;
+}
+[dir="rtl"] .intercom-align-left img,
+.right-to-left .intercom-align-left img,
+[dir="rtl"] .intercom-align-left .intercom-h2b-button,
+.right-to-left .intercom-align-left .intercom-h2b-button {
+  margin-left: 0 !important;
+}
+.intercom-attachment,
+.intercom-attachments,
+.intercom-attachments td,
+.intercom-attachments th,
+.intercom-attachments tr,
+.intercom-attachments tbody,
+.intercom-attachments .icon,
+.intercom-attachments .icon img {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.intercom-attachments {
+  margin: 10px 0 !important;
+}
+.intercom-attachments .icon,
+.intercom-attachments .icon img {
+  width: 16px !important;
+  height: 16px !important;
+}
+.intercom-attachments .icon {
+  padding-right: 5px !important;
+}
+.intercom-attachment {
+  display: inline-block !important;
+  margin-bottom: 5px !important;
+}
+</style>
+
+</head>
+
+<body marginheight="0" topmargin="0" marginwidth="0" style="margin: 0px; background-color: white;" bgcolor="white" leftmargin="0">
+
+  <table cellspacing="0" border="0" cellpadding="0" align="center" width="600" bgcolor="transparent" class="announcement main">
+    <tr>
+      <td style="padding-top: 60px;">
+
+        <!-- Header -->
+        <table width="100%" class="header">
+          <tr>
+            <td align="center">
+              \{{widget.logo}}
+            </td>
+          </tr>
+        </table>
+        <!-- Main content -->
+        <table width="100%" class="content">
+          <tr>
+            <td class="content-td">
+              \{{CONTENT}}
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+  <!-- Footer -->
+  <table cellspacing="0" border="0" cellpadding="0" align="center" width="100%" bgcolor="transparent" class="main footer \{{footerVisibilityClass}}">
+    <tr>
+      <td class="footer-td">
+        \{{widget.social}}
+        \{{widget.address}}
+        <p class="unsub \{{unsubscribeLinkClass}}"><a class="ic-unsubscribe-link" href="#">{{unsubscribe_link}}</a></p>
+        {{#if show_powered_by}}
+          <p class="powered-by">{{{powered_by_link}}}</p>
+        {{/if}}
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

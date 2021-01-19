@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <style type="text/css">
+    /* Preview styles that are only applied when editing a message */
+    .bgtc { margin: 0 auto !important; padding:0; width:100% !important; line-height: 100% !important;}
+
+    /* Some sensible defaults for images
+    Bring inline: Yes. */
+    img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; max-width:100%;}
+    a img {border:none;}
+    .image_fix {display:block;}
+
+    /* Yahoo paragraph fix
+    Bring inline: Yes. */
+    p {margin: 1em 0;}
+
+    /* Hotmail header color reset
+    Bring inline: Yes. */
+    h1, h2, h3, h4, h5, h6 {color: #1d364b !important;}
+
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: blue !important;}
+
+    h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+    color: red !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+    }
+
+    h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+    color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+    }
+
+    /* Remove spacing around Outlook 07, 10 tables
+    Bring inline: Yes */
+    table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+
+    br.hidden {
+      display: none;
+    }
+
+    table.message_wrapper_table,
+    table.comment_wrapper_table,
+    table.message_footer_table,
+    table.reply_header_table {
+      width: 600px;
+      margin: 0 auto;
+      font-size: 13px;
+      line-height: 20px;
+      color: #545454;
+      font-family: "Helvetica Neue",Arial,sans-serif;
+    }
+
+    table.reply_header_table {
+      width: 100%;
+      margin-bottom: 26px;
+      line-height: 26px;
+      color: #c0c0c0;
+    }
+
+    table.reply_header_table div {
+      border-bottom: thin solid #e6e6e6;
+      width: 600px;
+      padding: 5px 0;
+      margin: 0 auto;
+    }
+
+    table.reply_header_table .sent_to {
+      color: #8d8d8d;
+    }
+
+    table.reply_header_table .group_icon {
+      margin-right: 4px;
+    }
+
+    table.message_wrapper_table,
+    table.comment_wrapper_table {
+      border-radius: 3px;
+      background-clip: padding-box;
+      box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
+    }
+
+    table.comment_wrapper_table .comment_body_table,
+    table.message_wrapper_table .message_body_table {
+      border-collapse: separate;
+      width: 600px;
+      border: 1px solid #8c8c8c;
+      border-top: 0;
+      border-radius: 0 0 3px 3px;
+      background-clip: padding-box;
+    }
+
+    table.comment_wrapper_table .comment_body_table_td,
+    table.message_wrapper_table .message_body_table_td {
+      padding: 3px 30px 15px;
+      font-size: 13px;
+      line-height: 20px;
+      color: #545454;
+      font-family: "Helvetica Neue",Arial,sans-serif;
+      border-radius: 0 0 3px 3px;
+      background-clip: padding-box;
+    }
+
+    table.message_wrapper_table p,
+    table.comment_wrapper_table p {
+      margin: 20px 0;
+    }
+
+    table.user_comment .comment_body_table {
+      border-top: 1px solid #8c8c8c;
+      border-radius: 3px;
+      background-color: #f1f1f1;
+    }
+
+    table.user_comment .comment_body_table .comment_body_table_td {
+      padding-top: 5px;
+    }
+
+    table.comment_wrapper_table .comment_header,
+    table.message_wrapper_table .message_header {
+      border-collapse: separate;
+      width: 100%;
+      border: 1px solid #8c8c8c;
+      border-radius: 3px 3px 0 0;
+    }
+
+    table.comment_header {
+      font-size: 1px;
+      line-height: 3px;
+      height: 3px;
+    }
+
+    table.message_header td {
+      font-size: 24px;
+      line-height: 40px;
+      padding: 13px 0 12px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .avatar {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-clip: padding-box;
+    }
+
+    table.message_footer_table td {
+      color: #272727;
+    }
+
+    table.message_footer_table td.date_cell {
+      text-align: right;
+      color: #545454;
+    }
+
+    table.message_footer_table tr.padding_row td {
+      line-height: 1px;
+    }
+
+    .mail_footer {
+      width: 600px;
+    }
+
+    .mail_footer td {
+      color: #b1b1b1;
+      font-size: 11px;
+      line-height: 16px;
+      font-family: "Helvetica Neue",Arial,sans-serif;
+      text-align: center;
+    }
+
+    .mail_footer td a {
+      text-decoration: underline;
+      color: #b1b1b1;
+    }
+
+    .mail_footer #powered_by_wrapper {
+      padding-top: 3px;
+      padding-bottom: 9px;
+      line-height: 20px;
+      color: #828282;
+    }
+
+    .mail_footer #powered_by_wrapper a {
+      font-weight: bold;
+      color: #828282;
+    }
+
+    pre {
+      width: auto !important;
+      white-space: pre;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .ic_sticker span { display:none; display: none !important; }
+
+    table.comment_wrapper_table .comment_header,
+    table.message_wrapper_table .message_header {
+      border: 1px solid {{app_base_color}};
+    }
+
+    table.comment_header .comment_header_td,
+    table.message_header .message_header_td {
+      font-family: "Helvetica Neue",Arial,sans-serif;
+      background-color: {{app_base_color}};
+      border-top: 1px solid {{app_base_color}};
+    }
+    a { color: {{app_base_color}}; }
+
+    .message_body_table {
+      width: 100%;
+    }
+    table {
+      table-layout: fixed !important;
+    }
+    #backgroundTable {
+      max-width: 660px !important;
+    }
+  </style>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0" id="backgroundTable" class="bgtc" align="center">
+  <tr>
+    <td valign="top" height="20">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main_wrapper">
+        <table cellpadding="0" cellspacing="0" border="0" class="message_wrapper_table" align="center">
+          <tr>
+            <td valign="top" class="message_wrapper_td">
+              <table cellpadding="0" cellspacing="0" border="0" class="message_header">
+                <tr>
+                  <td valign="top" class="message_header_td">
+                    {{app_name}}
+                  </td>
+                </tr>
+              </table>
+              <table cellpadding="0" cellspacing="0" border="0" class="message_body_table">
+                <tr>
+                  <td valign="top" class="message_body_table_td js_contains_rich_message_editor js_primary_editor">
+                    [[content]]
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      <table cellpadding="0" cellspacing="0" border="0" class="mail_footer" align="center">
+        {{#if show_powered_by}}
+        <tr>
+          <td valign="top" id="powered_by_wrapper">
+            {{{powered_by_link}}}
+          </td>
+        </tr>
+        {{/if}}
+        <tr>
+          <td valign="top">
+            <p><a class="ic-unsubscribe-link" href="#">{{unsubscribe_link}}</a></p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" height="20">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

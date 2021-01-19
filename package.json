@@ -83,7 +83,11 @@
     "prettier": "^1.19.1",
     "pretty-quick": "^1.10.0",
     "qunit-dom": "^1.5.0",
-    "sinon": "^8.1.1"
+    "sinon": "^8.1.1",
+    "broccoli-concat": "^4.2.4",
+    "broccoli-funnel": "^3.0.3",
+    "broccoli-handlebars-precompiler": "^0.1.4",
+    "handlebars": "^4.7.6"
   },
   "engines": {
     "node": "10.* || >= 12"

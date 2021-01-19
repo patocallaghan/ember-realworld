@@ -1,0 +1,27 @@
+<table>
+  <tr>
+    <td><b class="u__one-truncated-line">{{date}}</b></td>
+    <td class="t__right"><b>{{allLeadConversations}} {{inflector-helper 'conversation' allLeadConversations}}</b><td>
+  </tr>
+  {{#if startedByLeads}}
+    <tr>
+      <td><div class="u__one-truncated-line insights__tooltip-vam">Started by leads</div></td>
+      <td class="t__right">{{startedByLeads}} {{inflector-helper 'conversation' startedByLeads}}</td>
+    </tr>
+  {{/if}}
+  {{#each visitorAutoMessages}}
+    <tr>
+      <td><div class="u__one-truncated-line insights__tooltip-vam">In reply to <a href="{{this.href}}" title="{{this.title}}">{{this.title}}</a></div></td>
+      <td class="t__right">{{this.count}} {{inflector-helper 'conversation' this.count}}</td>
+    </tr>
+  {{/each}}
+  {{#if additionalMessages}}
+    <tr>
+      <td><div class="u__one-truncated-line insights__tooltip-vam">
+          And {{additionalMessages.count}} other {{inflector-helper 'message' additionalMessages.count}}
+        </div>
+      </td>
+      <td class="t__right">{{additionalMessages.conversations}} {{inflector-helper 'conversation' additionalMessages.conversations}}</td>
+    </tr>
+  {{/if}}
+</table>

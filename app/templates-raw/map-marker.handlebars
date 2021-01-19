@@ -1,0 +1,13 @@
+<!-- TODO: possible to reuse this from avatar component template? -->
+{{#if avatar.image_urls.normal}}
+  <img class="avatar__media" src="{{avatar.image_urls.normal}}" style="position:absolute;z-index:2;">
+  <img class="avatar__media" src="{{default_avatar_url}}" style="position:absolute;z-index:1;">
+{{else}}
+  {{#if avatar.initials}}
+    <span class="avatar__media" style="background-color: #{{avatar.color}};">
+      {{avatar.initials}}
+    </span>
+  {{else}}
+    <img class="avatar__media" src="{{default_avatar_url}}" style="position:absolute;z-index:1;">
+  {{/if}}
+{{/if}}

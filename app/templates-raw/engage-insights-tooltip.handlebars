@@ -1,0 +1,28 @@
+<table>
+  <tr>
+    {{#if hasConversations}}
+      <td><b class="u__one-truncated-line">On {{date}} - {{messageCount}} {{inflector-helper 'message' messageCount}}</b></td>
+      <td><b class="u__one-truncated-line">sent {{conversationCount}} {{inflector-helper 'time' conversationCount}}</b></td>
+    {{else}}
+      <td><b class="u__one-truncated-line">On {{date}} - no messages were sent</b></td>
+    {{/if}}
+  </tr>
+  {{#each topMessages}}
+    <tr>
+      <td>
+        <div class="u__one-truncated-line insights__tooltip-engage">{{this.title}}</div>
+      </td>
+      <td class="t__right">sent {{this.displayedCount}} {{inflector-helper 'time' this.displayedCount}}</td>
+    </tr>
+  {{/each}}
+  {{#if additionalMessages}}
+    <tr>
+      <td>
+        <div class="u__one-truncated-line insights__tooltip-engage">
+          And {{additionalMessages.count}} other {{inflector-helper 'message' additionalMessages.count}}
+        </div>
+      </td>
+      <td class="t__right">sent {{additionalMessages.sent}} {{inflector-helper 'time' additionalMessages.sent}}</td>
+    </tr>
+  {{/if}}
+</table>
